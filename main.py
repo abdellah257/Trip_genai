@@ -7,7 +7,7 @@ import os
 import csv
 from openai import OpenAI
 import pinecone
-from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.embeddings.llamacpp import LlamaCppEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
 
