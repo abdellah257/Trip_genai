@@ -36,12 +36,11 @@ with open(csv_file_path, newline='') as csvfile:
 
 os.environ['OPENAI_API_KEY'] = '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'
 
-v2_key = "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"
-client = OpenAI(api_key=v2_key,
-                organization= "org-yHdbKL8wyLocilOUoSgLvyut")
+client = OpenAI(organization= "org-yHdbKL8wyLocilOUoSgLvyut")
 
 
 pinecone.init(api_key="13d845cb-6abf-4a47-9d62-d01f54b7a886", environment="gcp-starter")
+
 index = pinecone.Index("places")
 
 output = []
